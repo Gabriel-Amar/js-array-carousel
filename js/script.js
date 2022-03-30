@@ -34,10 +34,8 @@ for (let i = 0; i < items.length; i++){
     let titolo = document.createElement("div");
     
     titolo.setAttribute("class", "nomepaese");
-    
+
     let img = document.createElement("img");
-    
-    img.setAttribute("class", "active")
     
     img.setAttribute("src", items[i]);
     
@@ -87,27 +85,58 @@ row.append(next)
 row.append(prev)
 
 let immaginiIndex = 0;
+
+// const immagini2 = document.getElementsByClassName("column");
+// const immagini2Light = immagini2[0];
+// immagini2Light.setAttribute("class", "column light")
+
 const immagini = document.getElementsByClassName("immagini");
 const immagineActive = immagini[0];
 immagineActive.setAttribute("class", "immagini active")
+
 next.addEventListener("click", function () {
     immagini[immaginiIndex].classList.remove("active")
     immaginiIndex +=1;
-    immagini[immaginiIndex].classList.add("active");
     if (immaginiIndex > 4) {
     immaginiIndex = 0;
     }
+    immagini[immaginiIndex].classList.add("active");
+    
+    // immagini2[immaginiIndex].classList.toggle("light")
+    // immaginiIndex +=1;
+    // immagini2[immaginiIndex].classList.toggle("light");
     
 })
-
 prev.addEventListener("click", function () {
     immagini[immaginiIndex].classList.remove("active")
     immaginiIndex -=1;
-    immagini[immaginiIndex].classList.add("active")
     if(immaginiIndex < 0){
         immaginiIndex = 4;
     }
+    immagini[immaginiIndex].classList.add("active")
+
+    // immagini2[immaginiIndex].classList.remove("light")
+    // immaginiIndex -=1;
+    // immagini2[immaginiIndex].classList.add("light");
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
@@ -152,10 +181,3 @@ prev.addEventListener("click", function () {
             <div class="prev">&#8679;</div>
         </div>
         </div> */
-
-
-
-
-
-
-

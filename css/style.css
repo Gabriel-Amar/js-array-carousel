@@ -2,7 +2,7 @@
     position: relative;
 }
 .container2{
-    position: relative;
+    
 }
 .immagini img{
     width: 680px;
@@ -13,8 +13,8 @@
 }
 .row{
     position: absolute;
-    top: -382px;
-    left: 680px;
+    top: 48px;
+    left: 728px;
 }
 .nomepaese{
     position: absolute;
@@ -22,6 +22,7 @@
     top: 30px;
     left: 53px;
 }
+
 .immagini{
     display: none;
 }
@@ -60,4 +61,7 @@
     content: "";
     display: table;
     clear: both;
+}
+.light{
+    filter: brightness(0.5);
 }
