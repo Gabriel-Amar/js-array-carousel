@@ -16,13 +16,12 @@
     top: -382px;
     left: 680px;
 }
-.citta{
+.nomepaese{
     position: absolute;
     color: white;
     top: 30px;
     left: 53px;
 }
-
 .immagini{
     display: none;
 }
