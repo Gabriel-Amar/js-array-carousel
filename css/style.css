@@ -1,0 +1,64 @@
+.container {
+    position: relative;
+}
+.container2{
+    position: relative;
+}
+.immagini img{
+    width: 680px;
+    height: 382px;
+}
+.column img{
+    width: 137.5px;
+}
+.row{
+    position: absolute;
+    top: -382px;
+    left: 680px;
+}
+.citta{
+    position: absolute;
+    color: white;
+    top: 30px;
+    left: 53px;
+}
+
+.immagini{
+    display: none;
+}
+.immagini.active{
+    display: block;
+}
+.next, .prev{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    width: 40px;
+    height: 40px;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50%;
+    line-height: 4px;
+    padding-left: 13px;
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(146, 146, 146, 0.8);
+}
+.next{
+    top: 388px;
+    left: 82px;
+}
+.prev{
+    top: 54px;
+    left: 79px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
