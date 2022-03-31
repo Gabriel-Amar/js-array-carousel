@@ -11,6 +11,12 @@
 .column img{
     width: 137.5px;
 }
+/* .column{
+    display: none;
+}
+.column.actives{
+    display: block;
+} */
 .row{
     position: absolute;
     top: 48px;
@@ -19,10 +25,17 @@
 .nomepaese{
     position: absolute;
     color: white;
-    top: 30px;
-    left: 53px;
+    top: 380px;
+    left: 56px;
 }
-
+.testo{
+    position: absolute;
+    font-size: 10px;
+    color: white;
+    top: 411px;
+    text-align: right;
+    left: 56px;
+}
 .immagini{
     display: none;
 }

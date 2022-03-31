@@ -15,10 +15,10 @@ const title = [
 ]
 
 const text = [
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.',
+    'Lorem ipsum, dolor sit amet consecteturentore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.',
     'Lorem ipsum',
     'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
+    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temnventore eligendi ex ad ullam,',
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
 ]
 
@@ -34,6 +34,14 @@ for (let i = 0; i < items.length; i++){
     let titolo = document.createElement("div");
     
     titolo.setAttribute("class", "nomepaese");
+    
+    titolo.innerHTML = (title[i])
+
+    let testo = document.createElement("div")
+
+    testo.setAttribute("class", "testo")
+
+    testo.innerHTML = (text[i])
 
     let img = document.createElement("img");
     
@@ -44,6 +52,8 @@ for (let i = 0; i < items.length; i++){
     immagini.append(img)
     
     immagini.append(titolo)
+
+    immagini.append(testo)
 }
 
 const contenitore2 = document.getElementById("contenitore2");
@@ -84,11 +94,11 @@ row.append(next)
 
 row.append(prev)
 
-let immaginiIndex = 0;
 
+let immaginiIndex = 0;
 // const immagini2 = document.getElementsByClassName("column");
 // const immagini2Light = immagini2[0];
-// immagini2Light.setAttribute("class", "column light")
+// immagini2Light.setAttribute("class", "column actives")
 
 const immagini = document.getElementsByClassName("immagini");
 const immagineActive = immagini[0];
@@ -102,9 +112,9 @@ next.addEventListener("click", function () {
     }
     immagini[immaginiIndex].classList.add("active");
     
-    // immagini2[immaginiIndex].classList.toggle("light")
+    // immagini2[immaginiIndex].classList.remove("actives")
     // immaginiIndex +=1;
-    // immagini2[immaginiIndex].classList.toggle("light");
+    // immagini2[immaginiIndex].classList.remove("actives");
     
 })
 prev.addEventListener("click", function () {
@@ -115,9 +125,9 @@ prev.addEventListener("click", function () {
     }
     immagini[immaginiIndex].classList.add("active")
 
-    // immagini2[immaginiIndex].classList.remove("light")
+    // immagini2[immaginiIndex].classList.add("actives")
     // immaginiIndex -=1;
-    // immagini2[immaginiIndex].classList.add("light");
+    // immagini2[immaginiIndex].classList.remove("actives");
 })
 
 
